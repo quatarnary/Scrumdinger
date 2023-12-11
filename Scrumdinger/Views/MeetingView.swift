@@ -23,26 +23,36 @@ struct MeetingView: View {
                 Circle()
                     .strokeBorder(lineWidth: 24)
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
-                // why there is speakers in the scrumTimer??
-                // why in the hell scrumTimer also skips speakers
-                // changing the name as scrumManager will help here a lot 😸
+                    // why there is speakers in the scrumTimer??
+                    // why in the hell scrumTimer also skips speakers
+                    // changing the name as scrumManager will help here a lot 😸
             }
         }
-        // .foregroundColor is deprecated, hence I used foregroundStyle
+            // .foregroundColor is deprecated, hence I used foregroundStyle
         .padding()
         .foregroundStyle(scrum.theme.accentColor)
         .onAppear {
-            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
-            scrumTimer.startScrum()
-            scrumTimer.speakerChangedAction = {
-                player.seek(to: .zero)
-                player.play()
-            }
+            startScrum()
         }
         .onDisappear {
-            scrumTimer.stopScrum()
+            endScrum()
         }
         .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    private func startScrum() {
+        scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+        scrumTimer.startScrum()
+        scrumTimer.speakerChangedAction = {
+            player.seek(to: .zero)
+            player.play()
+        }
+    }
+    
+    private func endScrum() {
+        scrumTimer.stopScrum()
+        let newHistory = History(attendees: scrum.attendees)
+        scrum.history.insert(newHistory, at: 0)
     }
 }
 
