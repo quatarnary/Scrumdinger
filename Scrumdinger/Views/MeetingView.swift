@@ -19,7 +19,10 @@ struct MeetingView: View {
                 MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
                 Circle()
                     .strokeBorder(lineWidth: 24)
-                
+                MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
+                // why there is speakers in the scrumTimer??
+                // why in the hell scrumTimer also skips speakers
+                // changing the name as scrumManager will help here a lot 😸
             }
         }
         // .foregroundColor is deprecated, hence I used foregroundStyle
