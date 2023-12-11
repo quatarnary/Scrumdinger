@@ -39,6 +39,7 @@ struct MeetingHeaderView: View {
             HStack {
                 VStack (alignment: .leading) {
                     Label("\(secondsElapsed)", systemImage: "hourglass.bottomhalf.filled")
+                        .frame(width: 67, alignment: .leading)
                 }
                 
                 ProgressView(value: progress)
@@ -47,6 +48,7 @@ struct MeetingHeaderView: View {
                 VStack (alignment: .trailing) {
                     Label("\(secondsRemaining)", systemImage: "hourglass.tophalf.filled")
                         .labelStyle(.trailingIcon)
+                        .frame(width: 67, alignment: .trailing)
                 }
             }
         }
@@ -58,6 +60,6 @@ struct MeetingHeaderView: View {
 }
 
 #Preview {
-    MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 100, theme: .bubblegum)
+    MeetingHeaderView(secondsElapsed: 10, secondsRemaining: 9999, theme: .bubblegum)
         .previewLayout(.sizeThatFits)
 }
