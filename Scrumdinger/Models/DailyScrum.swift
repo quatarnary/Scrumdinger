@@ -63,6 +63,11 @@ extension DailyScrum {
         DailyScrum(title: "Web Dev",
                    attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"],
                    lengthInMinutes: 5,
+                   theme: .poppy),
+        
+        DailyScrum(title: "TEST",
+                   attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"],
+                   lengthInMinutes: 1,
                    theme: .poppy)
     ]
 }
