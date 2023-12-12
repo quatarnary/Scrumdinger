@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B18F08D2B28DE0F006FE956 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18F08C2B28DE0F006FE956 /* ErrorView.swift */; };
 		4B1C97BF2B25F4E9002CE8FC /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C97BE2B25F4E9002CE8FC /* MeetingFooterView.swift */; };
 		4B7A37252B20FD9C00EBEE63 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A37242B20FD9C00EBEE63 /* ThemePicker.swift */; };
 		4B7A37282B22464800EBEE63 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A37272B22464800EBEE63 /* AVPlayer+Ding.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B18F08C2B28DE0F006FE956 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		4B1C97BE2B25F4E9002CE8FC /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		4B7A37242B20FD9C00EBEE63 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		4B7A37272B22464800EBEE63 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				4BD2E7FA2B1E107200BC8D30 /* TrailingIconLabelStyle.swift */,
+				4B18F08C2B28DE0F006FE956 /* ErrorView.swift */,
 				4BD2E7FC2B1E168900BC8D30 /* ScrumsView.swift */,
 				4BBCB2622B1C9A60001E2576 /* CardView.swift */,
 				4BA433E32B1BB4CF003E2E9C /* MeetingView.swift */,
@@ -363,6 +366,7 @@
 				4BA433E22B1BB4CF003E2E9C /* ScrumdingerApp.swift in Sources */,
 				4B882D762B20CB79005356A3 /* ThemeView.swift in Sources */,
 				4BBCB2632B1C9A60001E2576 /* CardView.swift in Sources */,
+				4B18F08D2B28DE0F006FE956 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
