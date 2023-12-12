@@ -28,6 +28,7 @@
 		4BBD32E82B27BA48003E80DE /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD32E72B27BA48003E80DE /* NewScrumSheet.swift */; };
 		4BBD32EA2B27BD59003E80DE /* EditScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD32E92B27BD59003E80DE /* EditScrumSheet.swift */; };
 		4BBD32EC2B27CEA7003E80DE /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD32EB2B27CEA7003E80DE /* History.swift */; };
+		4BBD32EE2B27DDDF003E80DE /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD32ED2B27DDDF003E80DE /* ScrumStore.swift */; };
 		4BC5F8922B1F35D900317BF2 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC5F8912B1F35D900317BF2 /* DetailEditView.swift */; };
 		4BD2E7FB2B1E107200BC8D30 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD2E7FA2B1E107200BC8D30 /* TrailingIconLabelStyle.swift */; };
 		4BD2E7FD2B1E168900BC8D30 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD2E7FC2B1E168900BC8D30 /* ScrumsView.swift */; };
@@ -76,6 +77,7 @@
 		4BBD32E72B27BA48003E80DE /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		4BBD32E92B27BD59003E80DE /* EditScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScrumSheet.swift; sourceTree = "<group>"; };
 		4BBD32EB2B27CEA7003E80DE /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		4BBD32ED2B27DDDF003E80DE /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		4BC5F8912B1F35D900317BF2 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		4BD2E7FA2B1E107200BC8D30 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		4BD2E7FC2B1E168900BC8D30 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				4B7A37272B22464800EBEE63 /* AVPlayer+Ding.swift */,
 				4B7A372D2B2349BF00EBEE63 /* ScrumTimer.swift */,
 				4BBD32EB2B27CEA7003E80DE /* History.swift */,
+				4BBD32ED2B27DDDF003E80DE /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			files = (
 				4B7A37252B20FD9C00EBEE63 /* ThemePicker.swift in Sources */,
 				4BBCB2612B1C8A9F001E2576 /* DailyScrum.swift in Sources */,
+				4BBD32EE2B27DDDF003E80DE /* ScrumStore.swift in Sources */,
 				4BBD32EC2B27CEA7003E80DE /* History.swift in Sources */,
 				4B7A372C2B2345B200EBEE63 /* ScrumProgressViewStyle.swift in Sources */,
 				4BD2E8002B1E289F00BC8D30 /* DetailView.swift in Sources */,
