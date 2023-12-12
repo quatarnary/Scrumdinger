@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B18F08D2B28DE0F006FE956 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18F08C2B28DE0F006FE956 /* ErrorView.swift */; };
+		4B18F08F2B28EF7A006FE956 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18F08E2B28EF7A006FE956 /* MeetingTimerView.swift */; };
 		4B1C97BF2B25F4E9002CE8FC /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C97BE2B25F4E9002CE8FC /* MeetingFooterView.swift */; };
 		4B7A37252B20FD9C00EBEE63 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A37242B20FD9C00EBEE63 /* ThemePicker.swift */; };
 		4B7A37282B22464800EBEE63 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A37272B22464800EBEE63 /* AVPlayer+Ding.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		4B18F08C2B28DE0F006FE956 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		4B18F08E2B28EF7A006FE956 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
 		4B1C97BE2B25F4E9002CE8FC /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		4B7A37242B20FD9C00EBEE63 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		4B7A37272B22464800EBEE63 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				4B1C97BE2B25F4E9002CE8FC /* MeetingFooterView.swift */,
 				4BBD32E72B27BA48003E80DE /* NewScrumSheet.swift */,
 				4BBD32E92B27BD59003E80DE /* EditScrumSheet.swift */,
+				4B18F08E2B28EF7A006FE956 /* MeetingTimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				4BBD32E82B27BA48003E80DE /* NewScrumSheet.swift in Sources */,
 				4B7A372A2B233D6D00EBEE63 /* MeetingHeaderView.swift in Sources */,
 				4BD2E7FD2B1E168900BC8D30 /* ScrumsView.swift in Sources */,
+				4B18F08F2B28EF7A006FE956 /* MeetingTimerView.swift in Sources */,
 				4BBD32F02B27F40D003E80DE /* handling-errors.swift in Sources */,
 				4B7A372E2B2349BF00EBEE63 /* ScrumTimer.swift in Sources */,
 				4B7A37282B22464800EBEE63 /* AVPlayer+Ding.swift in Sources */,
