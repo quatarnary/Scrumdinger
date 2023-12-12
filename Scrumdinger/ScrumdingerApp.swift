@@ -30,10 +30,6 @@ struct ScrumdingerApp: App {
                     errorWraper = ErrorWrapper(error: error, guidance: "Scrumdinger will load sample data and continue.")
                 }
             }
-//            .sheet(item: $errorWraper, content: { wrapper in
-//                ErrorView(errorWrapper: wrapper)
-//            })
-//            SwiftUI encourages a declarative and concise coding style. Hence I'll go with the single line version
             .sheet(item: $errorWraper) {
                 store.scrums = DailyScrum.sampleData
             } content: { wrapper in
