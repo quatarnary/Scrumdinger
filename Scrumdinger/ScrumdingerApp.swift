@@ -1,15 +1,16 @@
-//
-//  ScrumdingerApp.swift
-//  Scrumdinger
-//
-//  Created by Bugra Aslan on 2.12.2023.
-//
+    //
+    //  ScrumdingerApp.swift
+    //  Scrumdinger
+    //
+    //  Created by Bugra Aslan on 2.12.2023.
+    //
 
 import SwiftUI
 
 @main
 struct ScrumdingerApp: App {
     @StateObject private var store = ScrumStore()
+    @State private var errorWraper: ErrorWrapper?
     
     var body: some Scene {
         WindowGroup {
@@ -18,17 +19,26 @@ struct ScrumdingerApp: App {
                     do {
                         try await store.save(scrums: store.scrums)
                     } catch {
-                        fatalError(error.localizedDescription)
+                        errorWraper = ErrorWrapper(error: error, guidance: "Try again later.")
                     }
                 }
             }
-                .task {
-                    do {
-                        try await store.load()
-                    } catch {
-                        fatalError(error.localizedDescription)
-                    }
+            .task {
+                do {
+                    try await store.load()
+                } catch {
+                    errorWraper = ErrorWrapper(error: error, guidance: "Scrumdinger will load sample data and continue.")
                 }
+            }
+//            .sheet(item: $errorWraper, content: { wrapper in
+//                ErrorView(errorWrapper: wrapper)
+//            })
+//            SwiftUI encourages a declarative and concise coding style. Hence I'll go with the single line version
+            .sheet(item: $errorWraper) {
+                store.scrums = DailyScrum.sampleData
+            } content: { wrapper in
+                ErrorView(errorWrapper: wrapper)
+            }
         }
     }
 }
