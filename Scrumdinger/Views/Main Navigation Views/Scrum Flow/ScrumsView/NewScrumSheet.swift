@@ -14,7 +14,7 @@ struct NewScrumSheet: View {
     
     var body: some View {
         NavigationStack {
-            DetailEditView(scrum: $newScrum)
+            ScrumDetailEditView(scrum: $newScrum)
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) {
                         Button("Dismiss") {
