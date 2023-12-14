@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MeetingTimerView: View {
     let speakers: [ScrumTimer.Speaker]
+    let isRecording: Bool
     let theme: Theme
     
     private var currentSpeaker: String {
@@ -23,6 +24,17 @@ struct MeetingTimerView: View {
                     Text(currentSpeaker)
                         .font(.title)
                     Text("is speaking")
+                    // On top of the tutorial I added the bold font weight and
+                    // foregroundStyle green or red depending on the record state
+                    // I also changed the mic icon to waveform.circle because mic may get confused with mic is on or off, however we are trying to indicate the recording, however there is no waveform.circle.slash hence I went with record.circle
+                    // As for the color I chose red when recording and theme.accentColor to indicate the recording
+                    // Red is used universal recording color so I think that makes sense but I'm open to suggestions
+                    Image(systemName: isRecording ? "waveform.circle" : "record.circle")
+                        .font(.title)
+                        .bold(true)
+                        .padding(.top)
+                        .foregroundStyle(isRecording ? .red : theme.accentColor)
+                        .accessibilityLabel(isRecording ? "with transcription" : "without transcription")
                 }
                 .accessibilityElement(children: .combine)
                 .foregroundStyle(theme.accentColor)
@@ -46,6 +58,6 @@ struct MeetingTimerView_Previews: PreviewProvider {
     }
     
     static var previews: some View {
-        MeetingTimerView(speakers: speakers, theme: .yellow)
+        MeetingTimerView(speakers: speakers, isRecording: true, theme: .yellow)
     }
 }
