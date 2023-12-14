@@ -143,7 +143,7 @@ actor SpeechRecognizer: ObservableObject {
     nonisolated private func transcribe(_ error: Error) {
         var errorMessage = ""
         if let error = error as? RecognizerError {
-            errorMessage += errorMessage
+            errorMessage += error.message
         } else {
             errorMessage += error.localizedDescription
         }
